@@ -2,11 +2,30 @@
     padding-top: 9px;
     margin: 40px 0 20px;
     border-top: 1px solid #eee;
-    text-align: center;
+
 }
 
 .page-header {
     text-align: center;
+}
+
+.project {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+#profile {
+    margin: 2em 0 0 0;
+    float: right;
+    display: inline-block;
+    border-radius: 100px;
+    height: 150px;
+    width: 200px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 #project1 {

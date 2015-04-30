@@ -7,21 +7,29 @@
         <script src="lib/angular.js"></script>
         <script src="lib/angular-route.js"></script>
         <script src="app.js"></script>
+        <script src="controllers/ProjectsController.js"></script>
         <link rel="stylesheet" href="css/mainstyles.css" type="text/css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
             <div class="page-header">
+
                 <h1>Hello World!</h1>
             </div>
-            <div class="body">
+            <div class="body" ng-controller="ProjectsCtrl">
                 <div class="nav">
-                    <h3>Navigation Bar</h3>
+                    <h3>Project List</h3>
                     <ul class="nav nav-pills">
-                        <li role="presentation"><a ng-href="/project1">Project 1</a></li>
-                        <li role="presentation"><a ng-href="/project2">Project 2</a></li>
-                        <li role="presentation"><a ng-href="/project3">Project 3</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project1" enter="/project1">Project 1</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project2" enter="/project2">Project 2</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project3" enter="/project3">Project 3</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project4" enter="/project4">Project 4</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project5" enter="/project5">Project 5</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project6" enter="/project6">Project 6</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project7" enter="/project7">Project 7</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project8" enter="/project8">Project 8</a></li>
+                        <li class="project" role="presentation"><a ng-href="/project9" enter="/project9">Project 9</a></li>
                     </ul>
                 </div>
                 <div class="content">
@@ -31,6 +39,7 @@
                 </div>
             </div>
             <div class="footer">
+                <img id="profile" src="images/profile.jpg" alt="Profile Picture" />
                 <h3>Footer</h3>
             </div>
         </div>

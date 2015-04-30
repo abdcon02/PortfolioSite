@@ -1,5 +1,13 @@
 var starSounds = angular.module('starSounds', ['ngRoute']);
 
+starSounds.directive('enter', function() {
+    return function(scope, element, attr) {
+        element.bind('mouseenter', function() {
+            scope.loadView(attr.enter);
+        });
+    };
+});
+
     starSounds.config(function($routeProvider, $locationProvider) {
 
         $routeProvider
@@ -11,6 +19,9 @@ var starSounds = angular.module('starSounds', ['ngRoute']);
             })
             .when('/project3', {
                 templateUrl : "partials/project3.html"
+            })
+            .otherwise({
+                redirectTo: "/"
             });
         //
         $locationProvider.html5Mode(true);
