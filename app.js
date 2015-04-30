@@ -12,6 +12,6 @@ var starSounds = angular.module('starSounds', ['ngRoute']);
             .when('/project3', {
                 templateUrl : "partials/project3.html"
             });
-
+        //
         $locationProvider.html5Mode(true);
     });

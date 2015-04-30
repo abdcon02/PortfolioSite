@@ -8,3 +8,15 @@
 .page-header {
     text-align: center;
 }
+
+#project1 {
+    color: red;
+}
+
+#project2 {
+    color: blue;
+}
+
+#project3 {
+    color: green;
+}
