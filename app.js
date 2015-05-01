@@ -3,8 +3,13 @@ var portfolio = angular.module('portfolio', ['ngRoute']);
 portfolio.directive('enter', function() {
     return function(scope, element, attr) {
         element.bind('mouseover', function() {
-            console.log(attr.text);
-            scope.hide = "this";
+            console.log(scope.only);
+
+            scope.only.forEach(function(subject) {
+                only.subject = "";
+            });
+
+            scope.only[attr.enter] = "this";
             scope.$apply();
 
 

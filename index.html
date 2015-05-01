@@ -20,10 +20,12 @@
             </div>
             <div class="body" ng-controller="ProjectsCtrl">
                 <div class="nav">
-                    <span enter class="topic allProjects">All Projects</span>
-                    <span enter="PHP" class="topic PHPProjects">PHP Projects</span>
-                    <span enter="JS" class="topic JavaScriptProjects">JavaScript Projects</span>
-                    <span enter="Angular" class="topic AngularJSProjects">AngularJS Projects</span>
+                    <div class="btn-group inline">
+                        <span enter="All" class="topic allProjects btn-group ">All Projects</span>
+                        <span enter="PHP" class="topic PHPProjects btn-group ">PHP Projects</span>
+                        <span enter="JS" class="topic JavaScriptProjects btn-group ">JavaScript Projects</span>
+                        <span enter="Angular" class="topic AngularJSProjects btn-group ">AngularJS Projects</span>
+                    </div>
                     <h3>Project List</h3>
                     <ul class="nav nav-pills">
                         <li ng-hide="only.PHP" class="project PHPProjects" role="presentation"><a ng-href="/project1" >Project 1</a></li>
@@ -34,7 +36,7 @@
                         <li ng-hide="only.Angular" class="project AngularJSProjects" role="presentation"><a ng-href="/project6" >Project 6</a></li>
                         <li ng-hide="only.JS" class="project JavaScriptProjects" role="presentation"><a ng-href="/project7" >Project 7</a></li>
                         <li ng-hide="only.PHP" class="project PHPProjects" role="presentation"><a ng-href="/project8" >Project 8</a></li>
-                        <li ng-hide="only.PSP" class="project PHPProjects" role="presentation"><a ng-href="/project9" >Project 9</a></li>
+                        <li ng-hide="only.PHP" class="project PHPProjects" role="presentation"><a ng-href="/project9" >Project 9</a></li>
                     </ul>
                 </div>
                 <div class="content">
