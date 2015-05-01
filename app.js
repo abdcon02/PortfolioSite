@@ -8,11 +8,13 @@ portfolio.directive('enter', function() {
                 scope.only.JS = "";
                 scope.only.Angular = "";
                 scope.only.PHP = "";
+                scope.only.p5 = "";
             } else {
 
                 scope.only.JS = "this";
                 scope.only.Angular = "this";
                 scope.only.PHP = "this";
+                scope.only.p5 = "this";
                 scope.only[attr.enter] = "";
 
             }

@@ -29,6 +29,10 @@
     background-color: rgba(204, 245, 255, 0.3);
 }
 
+.p5Projects{
+    background-color: rgba(224, 255, 235, 0.7);
+}
+
 .topic {
     border: 1px solid #eee;
     display: inline-block;
