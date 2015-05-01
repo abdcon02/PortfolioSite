@@ -3,16 +3,20 @@ var portfolio = angular.module('portfolio', ['ngRoute']);
 portfolio.directive('enter', function() {
     return function(scope, element, attr) {
         element.bind('mouseover', function() {
-            console.log(scope.only);
 
-            scope.only.forEach(function(subject) {
-                only.subject = "";
-            });
+            if (attr.enter == "All") {
+                scope.only.JS = "";
+                scope.only.Angular = "";
+                scope.only.PHP = "";
+            } else {
 
-            scope.only[attr.enter] = "this";
+                scope.only.JS = "this";
+                scope.only.Angular = "this";
+                scope.only.PHP = "this";
+                scope.only[attr.enter] = "";
+
+            }
             scope.$apply();
-
-
         });
     };
 });
