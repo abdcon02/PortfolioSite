@@ -1,10 +1,5 @@
-starSounds.controller('ProjectsCtrl', function ProjectsCtrl($scope, $location) {
-
-    $scope.loadView = function(view) {
-        console.log(view);
-        $location.path(view);
-        // console.log("ViewLoaded");
-    }
-
-
+portfolio.controller('ProjectsCtrl', function ProjectsCtrl($scope) {
+    $scope.only.JS = "";
+    $scope.only.PHP = "";
+    $scope.only.Angular = "";
 })

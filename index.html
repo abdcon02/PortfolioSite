@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="starSounds">
+<html ng-app="portfolio">
     <head>
         <meta charset="utf-8">
         <base href="/">
-        <title>Star Sounds</title>
+        <title>Connor's Portfolio</title>
         <script src="lib/angular.js"></script>
         <script src="lib/angular-route.js"></script>
         <script src="app.js"></script>
         <script src="controllers/ProjectsController.js"></script>
         <link rel="stylesheet" href="css/mainstyles.css" type="text/css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     </head>
     <body>
         <div class="container">
@@ -19,21 +20,26 @@
             </div>
             <div class="body" ng-controller="ProjectsCtrl">
                 <div class="nav">
+                    <span enter class="topic allProjects">All Projects</span>
+                    <span enter="PHP" class="topic PHPProjects">PHP Projects</span>
+                    <span enter="JS" class="topic JavaScriptProjects">JavaScript Projects</span>
+                    <span enter="Angular" class="topic AngularJSProjects">AngularJS Projects</span>
                     <h3>Project List</h3>
                     <ul class="nav nav-pills">
-                        <li class="project" role="presentation"><a ng-href="/project1" enter="/project1">Project 1</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project2" enter="/project2">Project 2</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project3" enter="/project3">Project 3</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project4" enter="/project4">Project 4</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project5" enter="/project5">Project 5</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project6" enter="/project6">Project 6</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project7" enter="/project7">Project 7</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project8" enter="/project8">Project 8</a></li>
-                        <li class="project" role="presentation"><a ng-href="/project9" enter="/project9">Project 9</a></li>
+                        <li ng-hide="only.PHP" class="project PHPProjects" role="presentation"><a ng-href="/project1" >Project 1</a></li>
+                        <li ng-hide="only.Angular" class="project AngularJSProjects" role="presentation"><a ng-href="/project2" >Project 2</a></li>
+                        <li ng-hide="only.JS" class="project JavaScriptProjects" role="presentation"><a ng-href="/project3" >Project 3</a></li>
+                        <li ng-hide="only.Angular" class="project AngularJSProjects" role="presentation"><a ng-href="/project4" >Project 4</a></li>
+                        <li ng-hide="only.JS" class="project JavaScriptProjects" role="presentation"><a ng-href="/project5" >Project 5</a></li>
+                        <li ng-hide="only.Angular" class="project AngularJSProjects" role="presentation"><a ng-href="/project6" >Project 6</a></li>
+                        <li ng-hide="only.JS" class="project JavaScriptProjects" role="presentation"><a ng-href="/project7" >Project 7</a></li>
+                        <li ng-hide="only.PHP" class="project PHPProjects" role="presentation"><a ng-href="/project8" >Project 8</a></li>
+                        <li ng-hide="only.PSP" class="project PHPProjects" role="presentation"><a ng-href="/project9" >Project 9</a></li>
                     </ul>
                 </div>
                 <div class="content">
                     <h3>Content</h3>
+
                     <div ng-view>
                     </div>
                 </div>
@@ -41,6 +47,11 @@
             <div class="footer">
                 <img id="profile" src="images/profile.jpg" alt="Profile Picture" />
                 <h3>Footer</h3>
+                <pre>
+                    Contact Info
+                    Phone: (360)-742-2234
+                    Email: connor.abd@gmail.com
+                </pre>
             </div>
         </div>
     </body>

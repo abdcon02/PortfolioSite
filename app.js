@@ -1,14 +1,18 @@
-var starSounds = angular.module('starSounds', ['ngRoute']);
+var portfolio = angular.module('portfolio', ['ngRoute']);
 
-starSounds.directive('enter', function() {
+portfolio.directive('enter', function() {
     return function(scope, element, attr) {
-        element.bind('mouseenter', function() {
-            scope.loadView(attr.enter);
+        element.bind('mouseover', function() {
+            console.log(attr.text);
+            scope.hide = "this";
+            scope.$apply();
+
+
         });
     };
 });
 
-    starSounds.config(function($routeProvider, $locationProvider) {
+    portfolio.config(function($routeProvider, $locationProvider) {
 
         $routeProvider
             .when('/project1', {
