@@ -1,15 +1,12 @@
-# Space Sounds App for Epicodus
+# Portfolio for Epicodus Work
 
-### Connor Abdelnoor & Tom Mertz & Tanner Heffner
+### Connor Abdelnoor
 
 ###### April 30, 2015
 
 #### Description
 
-John Cage wrote a few sonatas from the placement of stars in the sky.
-He used sections of starcharts to transpose the locations of certain stars to their equivalent on
-a music staff. My idea for this project is similar--- taking a random image of stars to play a note
-corresponding to the individual locations of stars on screen.
+This is my portfolio written in AngularJS
 
 #### Set Up
 
@@ -24,6 +21,6 @@ corresponding to the individual locations of stars on screen.
 * AngularJS
 
 
-#### License [MIT](https://gist.github.com/tfmertz/f59650110a594d4e226b)
+#### License [MIT](https://gist.github.com/abdcon02/0a856bcb7bf738ebc1ee)
 
-Copyright (c) Connor Abdelnoor & Tom Mertz & Tanner Heffner
+Copyright (c) Connor Abdelnoor
